@@ -146,14 +146,6 @@
       <a name="facing" val="west"/>
       <a name="width" val="16"/>
     </comp>
-    <comp lib="1" loc="(190,840)" name="Controlled Buffer">
-      <a name="facing" val="south"/>
-      <a name="width" val="16"/>
-    </comp>
-    <comp lib="1" loc="(390,840)" name="Controlled Buffer">
-      <a name="facing" val="south"/>
-      <a name="width" val="16"/>
-    </comp>
     <comp lib="1" loc="(540,820)" name="Controlled Buffer">
       <a name="facing" val="south"/>
       <a name="width" val="16"/>
@@ -254,14 +246,14 @@
       <a name="width" val="16"/>
     </comp>
     <comp lib="5" loc="(120,1280)" name="Button"/>
-    <comp lib="8" loc="(665,895)" name="Text">
+    <comp lib="8" loc="(1717,863)" name="Text">
       <a name="text" val="Эта общая шина нужна для того чтобы реализовать команду move"/>
     </comp>
     <comp loc="(1140,1210)" name="alu"/>
     <comp loc="(1770,410)" name="control_unit"/>
     <wire from="(1020,710)" to="(1020,860)"/>
     <wire from="(1020,710)" to="(1050,710)"/>
-    <wire from="(1020,860)" to="(1180,860)"/>
+    <wire from="(1020,860)" to="(1290,860)"/>
     <wire from="(1050,240)" to="(1150,240)"/>
     <wire from="(1090,260)" to="(1090,290)"/>
     <wire from="(1090,260)" to="(1150,260)"/>
@@ -270,9 +262,6 @@
     <wire from="(1160,270)" to="(1160,360)"/>
     <wire from="(1160,360)" to="(1330,360)"/>
     <wire from="(1180,250)" to="(1230,250)"/>
-    <wire from="(1180,710)" to="(1180,860)"/>
-    <wire from="(1180,710)" to="(1210,710)"/>
-    <wire from="(1180,860)" to="(1290,860)"/>
     <wire from="(120,1280)" to="(130,1280)"/>
     <wire from="(120,140)" to="(120,630)"/>
     <wire from="(120,140)" to="(180,140)"/>
@@ -297,17 +286,14 @@
     <wire from="(150,1220)" to="(200,1220)"/>
     <wire from="(150,970)" to="(160,970)"/>
     <wire from="(160,860)" to="(160,970)"/>
-    <wire from="(160,860)" to="(190,860)"/>
+    <wire from="(160,860)" to="(540,860)"/>
     <wire from="(170,710)" to="(190,710)"/>
     <wire from="(190,610)" to="(190,710)"/>
-    <wire from="(190,710)" to="(190,820)"/>
-    <wire from="(190,840)" to="(190,860)"/>
-    <wire from="(190,860)" to="(390,860)"/>
     <wire from="(200,1200)" to="(200,1220)"/>
     <wire from="(210,560)" to="(230,560)"/>
     <wire from="(210,580)" to="(210,630)"/>
     <wire from="(210,580)" to="(230,580)"/>
-    <wire from="(210,630)" to="(390,630)"/>
+    <wire from="(210,630)" to="(400,630)"/>
     <wire from="(220,1130)" to="(280,1130)"/>
     <wire from="(220,1140)" to="(320,1140)"/>
     <wire from="(220,1150)" to="(280,1150)"/>
@@ -333,11 +319,8 @@
     <wire from="(300,710)" to="(320,710)"/>
     <wire from="(310,750)" to="(310,810)"/>
     <wire from="(310,750)" to="(320,750)"/>
-    <wire from="(380,710)" to="(390,710)"/>
-    <wire from="(390,630)" to="(390,710)"/>
-    <wire from="(390,710)" to="(390,820)"/>
-    <wire from="(390,840)" to="(390,860)"/>
-    <wire from="(390,860)" to="(540,860)"/>
+    <wire from="(380,710)" to="(400,710)"/>
+    <wire from="(400,630)" to="(400,710)"/>
     <wire from="(420,190)" to="(460,190)"/>
     <wire from="(420,460)" to="(1410,460)"/>
     <wire from="(430,580)" to="(430,710)"/>
@@ -424,6 +407,18 @@
     <a name="circuit" val="control_unit"/>
     <a name="circuitnamedboxfixedsize" val="true"/>
     <a name="simulationFrequency" val="16.0"/>
+    <comp lib="0" loc="(1160,1000)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s_IAR"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,1080)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s_JAR"/>
+      <a name="output" val="true"/>
+    </comp>
     <comp lib="0" loc="(1160,260)" name="Pin">
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
@@ -446,6 +441,36 @@
       <a name="appearance" val="classic"/>
       <a name="facing" val="west"/>
       <a name="label" val="e_R2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,560)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="e_KR"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,700)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s_R0"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,770)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s_R1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,850)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s_R2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(1160,930)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="west"/>
+      <a name="label" val="s_MAR"/>
       <a name="output" val="true"/>
     </comp>
     <comp lib="0" loc="(210,160)" name="Pin">
