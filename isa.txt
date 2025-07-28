@@ -69,7 +69,3 @@ DAR - 1001
 Флаги:
 z - zero flag
 ng - negative flag
-
-Такты:
-1 - null
-2 -  вытащить инструкцию
