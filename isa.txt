@@ -72,5 +72,21 @@ z - zero flag
 ng - negative flag
 
 
-move instruction:
-move r0 r1
+Общие регистры:
+    R0
+    R1
+    R2
+
+
+Регистры специального назначения:
+    D
+    IAR
+    MAR
+    JAR
+
+
+input output регистры:
+    KR - keyboard register (ascii code)
+    DAR - display adress register
+
+
