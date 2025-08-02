@@ -64,8 +64,8 @@ R2 - 0100
 MAR - 0101
 IAR - 0110
 JAR - 0111
-KR - 1000
-DAR - 1001
+KR - 1000 (keyboard register)
+DAR - 1001 (display address register)
 
 Флаги:
 z - zero flag
